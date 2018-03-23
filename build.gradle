@@ -36,3 +36,12 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
 }
 compileJava.dependsOn(processResources)
+
+jar {
+    manifest {
+        attributes(
+                "Manifest-Version": "1.0",
+                "Class-Path": '. ' + configurations.compile.collect { it.getName() }.join(' ')
+        )
+    }
+}
