@@ -30,7 +30,7 @@
 │                               ├── TestService.java
 │                               └── TestServiceImpl.java
 └── resources
-    ├── application.yml
+    ├── application.yml Boot主配置文件
     ├── com
     │   └── github
     │       └── since1986
