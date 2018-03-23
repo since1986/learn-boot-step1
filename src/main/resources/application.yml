@@ -1,0 +1,34 @@
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/learn-boot-step1?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    dbcp2:
+      initial-size: 3
+
+server:
+  port: 8080
+
+app:
+  defaultCharacterEncoding: utf-8
+---
+spring:
+  profiles: production
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/learn-boot-step1?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    dbcp2:
+      initial-size: 3
+
+server:
+  port: 9090
+
+app:
+  defaultCharacterEncoding: utf-8

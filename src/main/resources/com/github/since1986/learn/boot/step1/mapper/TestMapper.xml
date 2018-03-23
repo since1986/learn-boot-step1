@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.github.since1986.learn.boot.step1.mapper.TestMapper">
+    <insert id="save">
+        insert into test(`id`, `name`) values (#{test.id}, #{test.name})
+    </insert>
+    <select id="get" resultMap="TestModel">
+        select *
+        from test
+        where `id` = #{id}
+    </select>
+    <update id="update">
+        update test set `name` = #{name} where `id` = #{id}
+    </update>
+    <delete id="delete">
+        delete from test where `id` = #{id}
+    </delete>
+    <resultMap id="TestModel" type="com.github.since1986.learn.boot.step1.model.TestModel">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+</mapper>
