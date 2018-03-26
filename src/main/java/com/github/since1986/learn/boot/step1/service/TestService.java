@@ -4,7 +4,7 @@ import com.github.since1986.learn.boot.step1.model.TestModel;
 
 public interface TestService {
 
-    void save(String name);
+    long save(String name);
 
     TestModel get(long id);
 

@@ -18,14 +18,16 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
-    public void save(String name) {
+    public long save(String name) {
+        long id = System.nanoTime();
         testMapper.save(
                 TestModel
                         .newBuilder()
-                        .withId(System.nanoTime())
+                        .withId(id)
                         .withName(name)
                         .build()
         );
+        return id;
     }
 
     @Override
