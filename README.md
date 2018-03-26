@@ -1,7 +1,7 @@
 # learn-boot-step1
 ---
 
-这是我的文章[「基于Spring Cloud构建微服务---关于Spring Boot」](https://since1986.github.io/blog/2018/03/23/%E5%9F%BA%E4%BA%8ESpring-Cloud%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1-%E5%85%B3%E4%BA%8ESpring-Boot/)附带的工程代码。
+这是我的文章[「Spring Cloud与微服务学习笔记-关于Spring Boot」](https://since1986.github.io/blog/2018/03/26/Spring-Cloud%E4%B8%8E%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%85%B3%E4%BA%8ESpring-Boot/)对应的工程代码。
 
 代码结构：
 ```
